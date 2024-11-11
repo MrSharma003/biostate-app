@@ -1,0 +1,20 @@
+{
+    "version": 2,
+    "builds": [
+      {
+        "src": "dist/main.js",
+        "use": "@vercel/node"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "dist/main.js"
+      }
+    ],
+    "env": {
+      "MONGO_URI": "your_mongodb_connection_string",
+      "REDIS_URL": "your_redis_connection_string"
+    }
+  }
+  
