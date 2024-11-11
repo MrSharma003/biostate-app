@@ -11,10 +11,6 @@
         "src": "/(.*)",
         "dest": "dist/main.js"
       }
-    ],
-    "env": {
-      "MONGO_URI": "your_mongodb_connection_string",
-      "REDIS_URL": "your_redis_connection_string"
-    }
+    ]
   }
   
